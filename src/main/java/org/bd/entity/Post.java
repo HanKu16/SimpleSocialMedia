@@ -10,8 +10,8 @@ public class Post {
 
     private final int postId;
     private final String content;
-    private final LocalDateTime creationDate;
-    private final int userId;
+    private final LocalDateTime creationDateTime;
+    private final String userId;
 
 }
 

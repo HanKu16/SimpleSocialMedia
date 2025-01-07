@@ -60,7 +60,7 @@ public class DbUsersRepository {
     }
 
     public Optional<User> update(String currentUserId, User updatedUser) {
-        String sql = "UPDATE users SET user_id = ?, password = ? WHERE id = ?";
+        String sql = "UPDATE users SET user_id = ?, password = ? WHERE user_id = ?";
         Optional<User> optionalUser = Optional.empty();
 
         try (Connection connection = DriverManager.getConnection(url, user, password);
